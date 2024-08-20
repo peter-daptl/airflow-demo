@@ -1,0 +1,22 @@
+{
+  "cycling_db": {
+    "conn_type": "mysql",
+    "description": "",
+    "login": "",
+    "password": "",
+    "host": "host.docker.internal",
+    "port": null,
+    "schema": "cycling",
+    "extra": "{\"ssl\": \"true\", \"charset\": \"utf8\", \"cursor\": \"dictcursor\"}"
+  },
+  "redis": {
+    "conn_type": "redis",
+    "description": "",
+    "login": "",
+    "password": null,
+    "host": "redis",
+    "port": 6379,
+    "schema": "",
+    "extra": "{\"db\": 0, \"ssl\": false, \"ssl_cert_reqs\": \"none\", \"ssl_check_hostname\": false}"
+  }
+}

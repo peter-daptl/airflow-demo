@@ -1,0 +1,11 @@
+__pycache__/
+clear
+*.pyc
+.coverage
+coverage.xml
+.DS_Store
+*ipynb*
+docker-compose.yaml.back
+logs/
+.idea/
+cache/
