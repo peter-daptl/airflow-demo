@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `cycling` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `cycling`;
 -- MySQL dump 10.13  Distrib 8.0.34, for macos13 (arm64)
 --
 -- Host: localhost    Database: cycling
@@ -46,7 +44,9 @@ CREATE TABLE `rank` (
   `season` int NOT NULL,
   `week` int NOT NULL,
   `points` int NOT NULL,
-  PRIMARY KEY (`rank_id`)
+  PRIMARY KEY (`rank_id`),
+  KEY `fk_rank_rider_idx` (`rider_id`),
+  CONSTRAINT `fk_rank_rider` FOREIGN KEY (`rider_id`) REFERENCES `rider` (`rider_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -94,4 +94,4 @@ CREATE TABLE `team` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-08-19 12:56:38
+-- Dump completed on 2024-08-24 17:25:02
