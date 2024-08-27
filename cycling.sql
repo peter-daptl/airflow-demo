@@ -45,6 +45,7 @@ CREATE TABLE `rank` (
   `week` int NOT NULL,
   `points` int NOT NULL,
   PRIMARY KEY (`rank_id`),
+  UNIQUE KEY `uq_rank` (`rider_id`,`ranking`,`week`,`season`),
   KEY `fk_rank_rider_idx` (`rider_id`),
   CONSTRAINT `fk_rank_rider` FOREIGN KEY (`rider_id`) REFERENCES `rider` (`rider_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -94,4 +95,4 @@ CREATE TABLE `team` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-08-24 17:25:02
+-- Dump completed on 2024-08-25 17:43:58
