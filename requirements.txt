@@ -3,6 +3,7 @@ flake8==7.1.1
 requests==2.32.3
 beautifulsoup4==4.12.3
 iteration_utilities==0.12.1
+confluent-kafka==2.5.0
 
 # Airflow providers (http://airflow.apache.org/docs/apache-airflow-providers/packages-ref.html)
 apache-airflow-providers-mysql==5.6.3

@@ -7,3 +7,4 @@ class Variable(Enum):
     """
 
     FIRST_CYCLING = "first_cycling"
+    KAFKA_TOPIC = "kafka_topic"

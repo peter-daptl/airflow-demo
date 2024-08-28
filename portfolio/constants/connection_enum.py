@@ -7,4 +7,5 @@ class Connection(Enum):
     """
 
     CYCLING_DB = "cycling_db"
+    KAFKA_BROKER = "kafka_broker"
     REDIS = "redis"

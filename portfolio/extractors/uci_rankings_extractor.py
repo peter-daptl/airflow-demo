@@ -21,7 +21,7 @@ class UCIRankingsExtractor(BaseExtractor):
             dt = date(year=year - 1, month=12, day=31)
             year = dt.isocalendar().year
             week = dt.isocalendar().week - 1
-
+        week = 30
         try:
             r = requests.get(
                 link.format(
