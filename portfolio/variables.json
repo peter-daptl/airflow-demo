@@ -1,3 +1,4 @@
 {
-    "first_cycling": "https://firstcycling.com/ranking.php?h=1&rank=1&y={year}-{week}"
+    "first_cycling": "https://firstcycling.com/ranking.php?h=1&rank=1&y={year}-{week}",
+    "kafka_topic": "rank"
 }

@@ -8,3 +8,7 @@ class RecordValidationException(Exception):
 
 class HTTPDataLoadException(Exception):
     """Exception for when an HTML page cannot be loaded successfully"""
+
+
+class KafkaBrokerException(Exception):
+    """Exception for when a Kafka Broker cannot be reached"""

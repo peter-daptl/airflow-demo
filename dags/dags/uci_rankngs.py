@@ -18,7 +18,7 @@ target = "UCIRankings"
     },
     schedule_interval="0 12 * * WED",
     start_date=datetime(2024, 1, 1),
-    catchup=True,
+    catchup=False,
     max_active_runs=1,
 )
 def uci_rankings():

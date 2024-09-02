@@ -9,6 +9,16 @@
     "schema": "cycling",
     "extra": "{\"ssl\": \"true\", \"charset\": \"utf8\", \"cursor\": \"dictcursor\"}"
   },
+  "kafka_broker": {
+    "conn_type": "http",
+    "description": "",
+    "login": "",
+    "password": null,
+    "host": "",
+    "port": null,
+    "schema": "",
+    "extra": "{\"bootstrap.servers\": \"host.docker.internal:29097\", \"acks\": \"all\"}"
+  },
   "redis": {
     "conn_type": "redis",
     "description": "",

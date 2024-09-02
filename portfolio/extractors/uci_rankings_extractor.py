@@ -12,6 +12,9 @@ from portfolio.utils.exceptions import HTTPDataLoadException
 class UCIRankingsExtractor(BaseExtractor):
 
     def extract(self):
+        """
+        Extracts the UCI rankings from the UCI website.
+        """
         link = Config.get_variable(Variable.FIRST_CYCLING.value)
         context = get_current_context()
         dt = context["execution_date"]
@@ -21,7 +24,7 @@ class UCIRankingsExtractor(BaseExtractor):
             dt = date(year=year - 1, month=12, day=31)
             year = dt.isocalendar().year
             week = dt.isocalendar().week - 1
-        week = 30
+
         try:
             r = requests.get(
                 link.format(
